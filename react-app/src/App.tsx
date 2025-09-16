@@ -1,17 +1,10 @@
-import { useState } from "react";
-import ListGroup from "./components/ListGroup";
-import './App.css'
-
+import { BsFillCalendarFill } from 'react-icons/bs'
+import Like from './components/Like';
 function App(){
-  const items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
 
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading="City"
-        onSelectItem={() => {}}
-      />
+        <Like onClick={()=> console.log('Click')}/>
     </div>
   );
 }
